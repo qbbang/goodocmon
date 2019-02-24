@@ -1,0 +1,6 @@
+framework module Pods_GoodocMon {
+  umbrella header "Pods-GoodocMon-umbrella.h"
+
+  export *
+  module * { export * }
+}
