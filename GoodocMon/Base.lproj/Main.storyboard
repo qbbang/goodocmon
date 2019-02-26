@@ -70,8 +70,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="saerch"/>
                                 <connections>
-                                    <action selector="searchGoodocMon:" destination="LBq-Fe-shy" eventType="touchUpInside" id="Jnj-rv-CxY"/>
-                                    <segue destination="GeG-t5-E82" kind="presentation" id="TcM-bp-aA8"/>
+                                    <action selector="searchGoodocMon:" destination="LBq-Fe-shy" eventType="touchUpInside" id="5QS-gs-xzc"/>
+                                    <segue destination="GeG-t5-E82" kind="presentation" modalTransitionStyle="flipHorizontal" id="oyy-7q-95W"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -86,20 +86,122 @@
             </objects>
             <point key="canvasLocation" x="800.79999999999995" y="20.689655172413794"/>
         </scene>
-        <!--View Controller-->
+        <!--InfoVC-->
         <scene sceneID="BpT-Oz-9eA">
             <objects>
-                <viewController id="GeG-t5-E82" sceneMemberID="viewController">
+                <viewController id="GeG-t5-E82" customClass="infoVC" customModule="GoodocMon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gwr-fQ-zkT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9a-KZ-7wP">
+                                <rect key="frame" x="16" y="449" width="80" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="성격">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionOne:" destination="GeG-t5-E82" eventType="touchUpInside" id="MDd-Yw-G9z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEP-UI-tMM">
+                                <rect key="frame" x="147" y="449" width="80" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="좋아하는">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionTwo:" destination="GeG-t5-E82" eventType="touchUpInside" id="Wse-bS-Sgz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DN-3z-eW6">
+                                <rect key="frame" x="279" y="449" width="80" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="하고싶은">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionThree:" destination="GeG-t5-E82" eventType="touchUpInside" id="5MA-F4-peA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="텍스트One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGW-kC-LOV" userLabel="textOne">
+                                <rect key="frame" x="0.0" y="517" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="텍스트TWO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqH-by-Eow" userLabel="textTwo">
+                                <rect key="frame" x="0.0" y="585" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="텍스트Three" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZu-Kf-teR" userLabel="textThree">
+                                <rect key="frame" x="0.0" y="653" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLB-sX-Xxr">
+                                <rect key="frame" x="147" y="730" width="80" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="포획하기">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionGet:" destination="GeG-t5-E82" eventType="touchUpInside" id="MwG-ax-F6A"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9bQ-tD-yO2"/>
                     </view>
+                    <connections>
+                        <outlet property="btnGet" destination="VLB-sX-Xxr" id="9ex-lQ-YB2"/>
+                        <outlet property="btnOne" destination="A9a-KZ-7wP" id="j54-12-aTy"/>
+                        <outlet property="btnThree" destination="9DN-3z-eW6" id="wUg-N3-NzQ"/>
+                        <outlet property="btnTwo" destination="WEP-UI-tMM" id="BZk-MU-tDy"/>
+                        <outlet property="textOne" destination="CGW-kC-LOV" id="Nww-f1-IlY"/>
+                        <outlet property="textThree" destination="yZu-Kf-teR" id="IML-sz-MCB"/>
+                        <outlet property="textTwo" destination="fqH-by-Eow" id="Do3-sM-Ipb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="go6-e1-88e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1543" y="23"/>
+            <point key="canvasLocation" x="1541.5999999999999" y="22.906403940886701"/>
+        </scene>
+        <!--GetVC-->
+        <scene sceneID="QDJ-bS-NFi">
+            <objects>
+                <viewController storyboardIdentifier="getVC" id="A5y-u7-6C6" customClass="getVC" customModule="GoodocMon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mHP-pb-cXG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6al-jJ-hVb" customClass="LOTAnimationView">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="sWs-4b-5nN"/>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="6al-jJ-hVb" id="ACF-zs-3xx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tdv-kn-1o0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2420" y="70.935960591133011"/>
         </scene>
     </scenes>
     <resources>
