@@ -33,15 +33,6 @@ class infoVC: UIViewController {
     
   }
   
-//  override func viewDidAppear(_ animated: Bool) {
-//    super.viewDidAppear(animated)
-//  }
-//
-//  override func didReceiveMemoryWarning() {
-//    super.didReceiveMemoryWarning()
-//    // Dispose of any resources that can be recreated.
-//  }
-  
   func setUI() {
     //MARK: 배경이미지
     self.view.backgroundColor = UIColor(patternImage: UIImage(named: "infoBG.png")!)
@@ -80,7 +71,7 @@ class infoVC: UIViewController {
       soundIntroPlayer?.play()
       soundIntroPlayer?.numberOfLoops = -1
     } catch {
-      // couldn't load file :(
+      
     }
   }
   
@@ -103,8 +94,6 @@ class infoVC: UIViewController {
   }
   
   @IBAction func actionOne(_ sender: Any) {
-    print("btn One")
-    
     textOne.text = ""
     textTwo.text = ""
     textThree.text = ""
@@ -112,11 +101,9 @@ class infoVC: UIViewController {
     typeText("긍정적😃", self.textOne)
     typeText("둥글둥글🥰", self.textTwo)
     typeText("소주처럼🍶", self.textThree)
-    
   }
   
   @IBAction func actionTwo(_ sender: Any) {
-    print("btn Two")
     textOne.text = ""
     textTwo.text = ""
     textThree.text = ""
@@ -127,7 +114,6 @@ class infoVC: UIViewController {
   }
   
   @IBAction func actionThree(_ sender: Any) {
-    print("btn Three")
     textOne.text = ""
     textTwo.text = ""
     textThree.text = ""

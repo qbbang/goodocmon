@@ -75,8 +75,8 @@
 		E8FDFC832225A39900F29AB7 /* cp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cp.png; sourceTree = "<group>"; };
 		E8FDFC842225A39900F29AB7 /* pocketball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pocketball.png; sourceTree = "<group>"; };
 		E8FDFC852225A39900F29AB7 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
-		E8FDFC862225A39900F29AB7 /* goodocmon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = goodocmon.json; path = support/AfterEffect/goodocmon.json; sourceTree = SOURCE_ROOT; };
-		E8FDFC872225A39A00F29AB7 /* getmon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = getmon.json; path = support/AfterEffect/getmon.json; sourceTree = SOURCE_ROOT; };
+		E8FDFC862225A39900F29AB7 /* goodocmon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = goodocmon.json; path = GoodocMon/Resource/Lottie/goodocmon.json; sourceTree = SOURCE_ROOT; };
+		E8FDFC872225A39A00F29AB7 /* getmon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = getmon.json; path = GoodocMon/Resource/Lottie/getmon.json; sourceTree = SOURCE_ROOT; };
 		E8FDFC962225A3D500F29AB7 /* bbang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bbang.png; sourceTree = "<group>"; };
 		E8FDFC972225A3D500F29AB7 /* pocketball_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pocketball_02.png; sourceTree = "<group>"; };
 		E8FDFC982225A3D500F29AB7 /* tug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tug.png; sourceTree = "<group>"; };
@@ -121,6 +121,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C0A90A5D2296699D009325FF /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				E8FDFC872225A39A00F29AB7 /* getmon.json */,
+				E8FDFC862225A39900F29AB7 /* goodocmon.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		C0A90A5E229669BF009325FF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E846044322210CEB00935B1F /* sound */,
+				E8FDFC792225A39900F29AB7 /* images */,
+				C0A90A5D2296699D009325FF /* Lottie */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		C0A90A5F22966A0D009325FF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E8838156221FEA4500F86B5C /* ViewController.swift */,
+				E883816622201EDB00F86B5C /* goodocmonVC.swift */,
+				E846045722211AE400935B1F /* infoVC.swift */,
+				E8FDFC41222586B800F29AB7 /* getVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C0A90A6022966A48009325FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E8838158221FEA4500F86B5C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E846044322210CEB00935B1F /* sound */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +166,8 @@
 				E846044622210EA900935B1F /* wlidBGM.wav */,
 				E8FDFC3F2225625100F29AB7 /* pokemonBGM.mp3 */,
 			);
-			path = sound;
+			name = sound;
+			path = ../sound;
 			sourceTree = "<group>";
 		};
 		E8838148221FEA4500F86B5C = {
@@ -152,19 +191,13 @@
 		E8838153221FEA4500F86B5C /* GoodocMon */ = {
 			isa = PBXGroup;
 			children = (
-				E8FDFC872225A39A00F29AB7 /* getmon.json */,
-				E8FDFC862225A39900F29AB7 /* goodocmon.json */,
-				E8FDFC792225A39900F29AB7 /* images */,
-				E846044322210CEB00935B1F /* sound */,
+				C0A90A5E229669BF009325FF /* Resource */,
+				C0A90A6022966A48009325FF /* View */,
+				C0A90A5F22966A0D009325FF /* ViewController */,
 				E8838154221FEA4500F86B5C /* AppDelegate.swift */,
-				E8838156221FEA4500F86B5C /* ViewController.swift */,
-				E8838158221FEA4500F86B5C /* Main.storyboard */,
 				E883815B221FEA4600F86B5C /* Assets.xcassets */,
 				E883815D221FEA4600F86B5C /* LaunchScreen.storyboard */,
 				E8838160221FEA4600F86B5C /* Info.plist */,
-				E883816622201EDB00F86B5C /* goodocmonVC.swift */,
-				E846045722211AE400935B1F /* infoVC.swift */,
-				E8FDFC41222586B800F29AB7 /* getVC.swift */,
 			);
 			path = GoodocMon;
 			sourceTree = "<group>";
@@ -198,7 +231,7 @@
 				E8FDFC852225A39900F29AB7 /* bg.png */,
 			);
 			name = images;
-			path = support/AfterEffect/images;
+			path = GoodocMon/Resource/images;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -329,7 +362,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GoodocMon/Pods-GoodocMon-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-GoodocMon/Pods-GoodocMon-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -340,7 +373,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoodocMon/Pods-GoodocMon-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoodocMon/Pods-GoodocMon-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
