@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Intro View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GoodocMon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IntroViewController" customModule="GoodocMon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="77.599999999999994" y="22.906403940886701"/>
         </scene>
-        <!--GoodocmonVC-->
+        <!--Appear Goodocmon View Controller-->
         <scene sceneID="v43-NP-UUZ">
             <objects>
-                <viewController id="LBq-Fe-shy" customClass="goodocmonVC" customModule="GoodocMon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LBq-Fe-shy" customClass="AppearGoodocmonViewController" customModule="GoodocMon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="suc-ZG-9o6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="800.79999999999995" y="20.689655172413794"/>
         </scene>
-        <!--InfoVC-->
+        <!--Info Goodocmon View Controller-->
         <scene sceneID="BpT-Oz-9eA">
             <objects>
-                <viewController id="GeG-t5-E82" customClass="infoVC" customModule="GoodocMon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GeG-t5-E82" customClass="InfoGoodocmonViewController" customModule="GoodocMon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gwr-fQ-zkT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -182,10 +182,10 @@
             </objects>
             <point key="canvasLocation" x="1541.5999999999999" y="22.906403940886701"/>
         </scene>
-        <!--GetVC-->
+        <!--Get Goodocmon View Controller-->
         <scene sceneID="QDJ-bS-NFi">
             <objects>
-                <viewController storyboardIdentifier="getVC" id="A5y-u7-6C6" customClass="getVC" customModule="GoodocMon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="getVC" id="A5y-u7-6C6" customClass="GetGoodocmonViewController" customModule="GoodocMon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mHP-pb-cXG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
