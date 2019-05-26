@@ -23,5 +23,7 @@
     ✅ Lottie ➡️ JSON animation 재생
     
     ✅ AVFoundation ➡️ wav 파일 재생
+    
+    ✅ Timer ➡️ scheduledTimer로 text 타이핑 효과
   
   
