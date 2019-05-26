@@ -12,7 +12,7 @@
 
 굿닥몬을 잡자!
 
-![](/keynote/222x480.gif)
+![](/support/goodocmon.gif)
 
 ---
 
